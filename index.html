@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cars</title>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="red-line">
+        <h2>Цены и варианты защиты</h2>
+    </div>
+    <div class="container">
+        <div id="classes">
+            <div id="carsMini">
+                <div class="class-name">
+                    <p><b>КЛАСС MINI*</b></p>
+                </div>
+                <img src="images/ситроен/чистый.jpg">
+                <a href="#" class="calculate" onclick="changeMini()">
+                    <p><b>РАССЧИТАТЬ СТОИМОСТЬ</b></p>
+                </a>
+                <svg width="32px" height="24px" id="svg1">
+                    <polygon points="0,0 32,0 16,24" style="fill:#eb5346"></polygon>
+                </svg>
+            </div>
+            <div id="carsMiddle">
+                <div class="class-name">
+                    <p><b>СРЕДНИЙ КЛАСС*</b></p>
+                </div>
+                <img src="images/мазда/чистая.jpg" alt="не загрузилось">
+                <a href="#" class="calculate" onclick="changeMiddle()">
+                    <p><b>РАССЧИТАТЬ СТОИМОСТЬ</b></p>
+                </a>
+                <svg width="32px" height="24px" id="svg2">
+                    <polygon points="0,0 32,0 16,24" style="fill:#eb5346"></polygon>
+                </svg>
+            </div>
+            <div id="carsPremium">
+                <div class="class-name">
+                    <p><b>ПРЕМИУМ КЛАСС*</b></p>
+                </div>
+                <img src="images/мерседес/чистый.jpg">
+                <a href="#" class="calculate" onclick="changePremium()">
+                    <p><b>РАССЧИТАТЬ СТОИМОСТЬ</b></p>
+                </a>
+                <svg width="32px" height="24px" id="svg3">
+                    <polygon points="0,0 32,0 16,24" style="fill:#eb5346"></polygon>
+                </svg>
+            </div>
+        </div>
+        <div id="car-image"></div>
+        <div id="menu1" class="menu">
+            <ul>
+                <li>
+                    <a href="#" onmouseover="minimalMini()" id="1-1" class="hide">МИНИМАЛЬНЫЙ</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="standartMini()" id="1-2" class="hide">СТАНДАРТ</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="standartPlusMini()" id="1-3" class="hide">СТАНДАРТ+</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="standart2PlusMini()" id="1-4" class="hide">СТАНДАРТ++</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="standart3PlusMini()" id="1-5" class="hide">СТАНДАРТ+++</a>
+                </li>
+                <li>
+                    <a href="#" onmouseover="fullMini()" id="1-6" class="hide">ЦЕЛИКОМ</a>
+                </li>
+                <li>
+                    <a href="#" onclick="partialPlansMini()" class="partialPlans">ЧАСТЯМИ</a>
+                    <ul class="parts-ul">
+                        <li>
+                            <a href="#" onmouseover="minimalMini()" id="1-1" class="hide">МИНИМАЛЬНЫЙ</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="standartMini()" id="1-2" class="hide">СТАНДАРТ</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="standartPlusMini()" id="1-3" class="hide">СТАНДАРТ+</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="standart2PlusMini()" id="1-4" class="hide">СТАНДАРТ++</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="standart3PlusMini()" id="1-5" class="hide">СТАНДАРТ+++</a>
+                        </li>
+                        <li>
+                            <a href="#" onmouseover="fullMini()" id="1-6" class="hide">ЦЕЛИКОМ</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="menu2" class="menu">
+            <ul>
+                <li>
+                    <a href="" onmouseover="minimalMiddle()" id="2-1" class="hide">МИНИМАЛЬНЫЙ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standartMiddle()" id="2-2" class="hide">СТАНДАРТ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standartPlusMiddle()" id="2-3" class="hide">СТАНДАРТ+</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standart2PlusMiddle()" id="2-4" class="hide">СТАНДАРТ++</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standart3PlusMiddle()" id="2-5" class="hide">СТАНДАРТ+++</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="fullMiddle()" id="2-6" class="hide">ЦЕЛИКОМ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="partialPlansMiddle()" class="hide">ЧАСТЯМИ</a>
+                </li>
+            </ul>
+        </div>
+        <div id="menu3" class="menu">
+            <ul>
+                <li>
+                    <a href="" onmouseover="minimalPremium()" id="3-1" class="hide">МИНИМАЛЬНЫЙ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standartPremium()" id="3-2" class="hide">СТАНДАРТ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standartPlusPremium()" id="3-3" class="hide">СТАНДАРТ+</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standart2PlusPremium()" id="3-4" class="hide">СТАНДАРТ++</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="standart3PlusPremium()" id="3-5" class="hide">СТАНДАРТ+++</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="fullPremium()" id="3-6" class="hide">ЦЕЛИКОМ</a>
+                </li>
+                <li>
+                    <a href="" onmouseover="partialPlansPremium()">ЧАСТЯМИ</a>
+                </li>
+            </ul>
+        </div>
+        <div class="parts">
+            <div id="mirror"></div>
+        </div>
+    </div>
+</body>
+</html>

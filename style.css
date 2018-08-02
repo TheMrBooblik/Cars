@@ -1,0 +1,145 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+h2{
+    font-family: 'PT Sans', sans-serif;
+    color: #ffffff;
+    margin: auto;
+}
+
+.red-line{
+    background: #eb5346;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid rgba(0,0,0,.3);
+}
+
+li{
+    padding: 8px;
+}
+
+.parts-ul{
+    border: 0;
+}
+
+.container{
+    width:90%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.class-name{
+    display: block;
+    width: 150px;
+    height: 20px;
+    background-color: #252e39;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+}
+
+.calculate{
+    display: block;
+    width: 200px;
+    height: 20px;
+    background-color: #eb5346;
+    color: #ffffff;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+}
+
+.calculate p{
+    margin: 0;
+}
+
+#car-image{
+    background-image: url("images/мазда/стандарт++.jpg");
+    background-repeat: no-repeat;
+    float: left;
+    width: 660px;
+    height: 350px;
+}
+
+svg{
+    display: flex;
+    margin: auto;
+    padding-top: 7px;
+}
+
+#svg1{
+    display:none;
+}
+
+#svg3{
+    display:none;
+}
+
+#classes{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#classes img{
+    width: 100%;
+    height: auto;
+}
+
+.menu a{
+     display: block;
+     text-decoration: none;
+     transition: .3s linear;
+}
+
+.menu a:hover{
+    background-color: #eb5346;
+    color: #ffffff;
+}
+
+.partialPlans{
+    background-color: #252e39;
+    color: #ffffff;
+}
+
+.menu{
+    width: 200px;
+    padding: 15px;
+    float: right;
+}
+
+#menu1{
+    display:none;
+}
+
+#menu3{
+    display:none;
+}
+
+.show{
+    background: #eb5346;
+    color: #ffffff;
+}
+
+.hide{
+    background: #ffffff;
+    color: #343c46;
+}
+
+#mirror{
+    background:url(images/иконки-модуля.png);
+}
