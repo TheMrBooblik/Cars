@@ -19,18 +19,25 @@ h2{
     align-items: center;
 }
 
-ul {
+ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    border-left: 1px solid rgba(0,0,0,.3);
+}
+
+.list-border{
+    border-left: 2px solid;
 }
 
 li{
-    padding: 8px;
+
 }
 
-.parts-ul{
+.menu li{
+
+}
+
+.parts-ul ul{
     border: 0;
 }
 
@@ -38,6 +45,7 @@ li{
     width:90%;
     max-width: 960px;
     margin: 0 auto;
+    display: flex;
 }
 
 .class-name{
@@ -73,6 +81,7 @@ li{
     float: left;
     width: 660px;
     height: 350px;
+    transition: 0.3s linear;
 }
 
 svg{
@@ -100,19 +109,15 @@ svg{
     height: auto;
 }
 
-.menu a{
-     display: block;
-     text-decoration: none;
-     transition: .3s linear;
+.element-menu a{
+    display: block;
+    text-decoration: none;
+    transition: .3s linear;
+    padding: 5px 5px 5px 30px;
 }
 
-.menu a:hover{
+.element-menu a:hover{
     background-color: #eb5346;
-    color: #ffffff;
-}
-
-.partialPlans{
-    background-color: #252e39;
     color: #ffffff;
 }
 
@@ -140,6 +145,191 @@ svg{
     color: #343c46;
 }
 
-#mirror{
-    background:url(images/иконки-модуля.png);
+#navlist{
+    margin-top: 350px;
+    position: relative;
+    height: 54px;
+}
+
+#navlist li {
+    padding: 0;
+    list-style: none;
+    top: 0;
+}
+
+#navlist-text{
+
+}
+
+.icon-block{
+    height: 54px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.test{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.icon-block p{
+    font-size: 14px;
+    text-align: center;
+    color: #eb5346;
+    -webkit-margin-before: 0;
+    margin-top: 0;
+}
+
+.bonnet-full{
+    background: url(images/иконки-модуля.png) 0 -50px;
+    left: 0;
+    height: 52px;
+    width: 70px;
+    transition: .3s linear;
+}
+
+.bonnet-part{
+    background: url(images/иконки-модуля.png) -75px -50px;
+    left: 0;
+    height: 54px;
+    width: 70px;
+    transition: .3s linear;
+}
+
+.internal-thresholds{
+    background: url(images/иконки-модуля-2.png) -222px -30px;
+    background-size: 300px 61px;
+    left: 0;
+    height: 34px;
+    width: 70px;
+    transition: .3s linear;
+}
+
+.wings-full{
+    background: url(images/иконки-модуля-3.png) -435px 0;
+    left: 0;
+    height: 40px;
+    width: 100px;
+    transition: .3s linear;
+}
+
+.wings-part{
+    background: url(images/иконки-модуля-3.png) -345px 0;
+    left: 0;
+    height: 40px;
+    width: 100px;
+    transition: .3s linear;
+}
+
+.butt-end-door{
+    background: url(images/иконки-модуля-4.png) -210px -35px;
+    left: 0;
+    height: 48px;
+    width: 70px;
+    transition: .3s linear;
+}
+
+#home {
+    left: 0;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+}
+
+#prev {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+}
+
+#next {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+}
+
+#price-block{
+    width: 300px;
+    margin-top: 50px;
+}
+
+#price {
+    border-top: 2px solid;
+}
+
+#recall {
+    width: 200px;
+    height: 40px;
+    background-color: #252e39;
+    color: #ffffff;
+    text-align: center;
+    float: right;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partialPlans{
+    background-color: #252e39;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 100px 5px 30px;
+}
+
+.partialPlans:hover{
+    background-color: #252e39;
+    color: #ffffff;
+}
+
+.st{
+    background-color: #252e39;
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.parts-ul, #go1 {
+    display:none;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#go1:checked ~ .parts-ul {
+    display:block;
+}
+
+.parts-ul, #go2 {
+    display:none;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+#go2:checked ~ .parts-ul {
+    display:block;
+}
+
+.element-opener{
+    margin-top: 5px;
+}
+
+.element-menu{
+    height: 31px;
+}
+
+.line{
+    border-width: 0 0 0 1px;
+    border-style: solid;
+}
+
+.hide-parts{
+    display: none;
+}
+
+.show-parts{
+    display: block;
 }

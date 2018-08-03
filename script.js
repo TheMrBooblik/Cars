@@ -28,7 +28,6 @@ function changePremium() {
     document.getElementById("car-image").style.backgroundImage = "url('images/мерседес/стандарт++.jpg')";
 }
 
-
 function minimalMini() {
     document.getElementById("car-image").style.backgroundImage = "url('images/ситроен/минимальный.jpg')";
     document.getElementById('1-1').className = 'show';
@@ -37,6 +36,11 @@ function minimalMini() {
     document.getElementById("1-4").className = 'hide';
     document.getElementById("1-5").className = 'hide';
     document.getElementById("1-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'internal-thresholds';
+    document.getElementById("text-icon1").innerHTML = "пороги внутренние";
+    document.getElementById("wings").className = 'butt-end-door';
+    document.getElementById("text-icon2").innerHTML = "торцы дверей";
 }
 
 function minimalMiddle() {
@@ -47,6 +51,11 @@ function minimalMiddle() {
     document.getElementById("2-4").className = 'hide';
     document.getElementById("2-5").className = 'hide';
     document.getElementById("2-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'internal-thresholds';
+    document.getElementById("text-icon1").innerHTML = "пороги внутренние";
+    document.getElementById("wings").className = 'butt-end-door';
+    document.getElementById("text-icon2").innerHTML = "торцы дверей";
 }
 
 function minimalPremium() {
@@ -57,6 +66,11 @@ function minimalPremium() {
     document.getElementById("3-4").className = 'hide';
     document.getElementById("3-5").className = 'hide';
     document.getElementById("3-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'internal-thresholds';
+    document.getElementById("text-icon1").innerHTML = "пороги внутренние";
+    document.getElementById("wings").className = 'butt-end-door';
+    document.getElementById("text-icon2").innerHTML = "торцы дверей";
 }
 
 function standartMini() {
@@ -67,6 +81,11 @@ function standartMini() {
     document.getElementById("1-4").className = 'hide';
     document.getElementById("1-5").className = 'hide';
     document.getElementById("1-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-part';
+    document.getElementById("text-icon1").innerHTML = "часть капота";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standartMiddle() {
@@ -77,6 +96,11 @@ function standartMiddle() {
     document.getElementById("2-4").className = 'hide';
     document.getElementById("2-5").className = 'hide';
     document.getElementById("2-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-part';
+    document.getElementById("text-icon1").innerHTML = "часть капота";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standartPremium() {
@@ -87,6 +111,11 @@ function standartPremium() {
     document.getElementById("3-4").className = 'hide';
     document.getElementById("3-5").className = 'hide';
     document.getElementById("3-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-part';
+    document.getElementById("text-icon1").innerHTML = "часть капота";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standartPlusMini() {
@@ -97,6 +126,11 @@ function standartPlusMini() {
     document.getElementById("1-4").className = 'hide';
     document.getElementById("1-5").className = 'hide';
     document.getElementById("1-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standartPlusMiddle() {
@@ -107,6 +141,11 @@ function standartPlusMiddle() {
     document.getElementById("2-4").className = 'hide';
     document.getElementById("2-5").className = 'hide';
     document.getElementById("2-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standartPlusPremium() {
@@ -117,6 +156,11 @@ function standartPlusPremium() {
     document.getElementById("3-4").className = 'hide';
     document.getElementById("3-5").className = 'hide';
     document.getElementById("3-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-part';
+    document.getElementById("text-icon2").innerHTML = "часть крыльев";
 }
 
 function standart2PlusMini() {
@@ -127,6 +171,11 @@ function standart2PlusMini() {
     document.getElementById('1-4').className = 'show';
     document.getElementById("1-5").className = 'hide';
     document.getElementById("1-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function standart2PlusMiddle() {
@@ -137,6 +186,11 @@ function standart2PlusMiddle() {
     document.getElementById('2-4').className = 'show';
     document.getElementById("2-5").className = 'hide';
     document.getElementById("2-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function standart2PlusPremium() {
@@ -147,6 +201,11 @@ function standart2PlusPremium() {
     document.getElementById('3-4').className = 'show';
     document.getElementById("3-5").className = 'hide';
     document.getElementById("3-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function standart3PlusMini() {
@@ -157,6 +216,11 @@ function standart3PlusMini() {
     document.getElementById("1-4").className = 'hide';
     document.getElementById('1-5').className = 'show';
     document.getElementById("1-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function standart3PlusMiddle() {
@@ -167,6 +231,11 @@ function standart3PlusMiddle() {
     document.getElementById("2-4").className = 'hide';
     document.getElementById("2-5").className = 'show';
     document.getElementById("2-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function standart3PlusPremium() {
@@ -177,6 +246,11 @@ function standart3PlusPremium() {
     document.getElementById("3-4").className = 'hide';
     document.getElementById("3-5").className = 'show';
     document.getElementById("3-6").className = 'hide';
+    document.getElementById("navlist").className = 'show-parts';
+    document.getElementById("bonnet").className = 'bonnet-full';
+    document.getElementById("text-icon1").innerHTML = "капот полностью";
+    document.getElementById("wings").className = 'wings-full';
+    document.getElementById("text-icon2").innerHTML = "крылья полностью";
 }
 
 function fullMini() {
@@ -187,6 +261,7 @@ function fullMini() {
     document.getElementById("1-4").className = 'hide';
     document.getElementById("1-5").className = 'hide';
     document.getElementById("1-6").className = 'show';
+    document.getElementById("navlist").className = 'hide-parts';
 }
 
 function fullMiddle() {
@@ -197,6 +272,7 @@ function fullMiddle() {
     document.getElementById("2-4").className = 'hide';
     document.getElementById("2-5").className = 'hide';
     document.getElementById("2-6").className = 'show';
+    document.getElementById("navlist").className = 'hide-parts';
 }
 
 function fullPremium() {
@@ -207,8 +283,20 @@ function fullPremium() {
     document.getElementById("3-4").className = 'hide';
     document.getElementById("3-5").className = 'hide';
     document.getElementById("3-6").className = 'show';
+    document.getElementById("navlist").className = 'hide-parts';
 }
 
+function partialPlansMini(){
+    document.getElementById("navlist").className = 'hide-parts';
+}
+
+function partialPlansMiddle(){
+    document.getElementById("navlist").className = 'hide-parts';
+}
+
+function partialPlansPremium(){
+    document.getElementById("navlist").className = 'hide-parts';
+}
 
 
 
